@@ -1,0 +1,12 @@
+svg {
+    width: 800;
+    height:640;
+    border-style: dotted;
+    border-color: black;
+}
+
+svg path {
+    fill:none;
+    stroke:red;
+}
+

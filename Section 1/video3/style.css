@@ -1,0 +1,13 @@
+.bar {
+    height: 40px;
+    background-color: blue;
+    margin: 4px;
+}
+
+svg {
+    width: 800px;
+    height:640px;
+}
+svg rect {
+    fill:red;
+}

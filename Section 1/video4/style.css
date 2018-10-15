@@ -1,0 +1,14 @@
+svg {
+    width: 800px;
+    height:640px;
+}
+svg * {
+    stroke:black;
+}
+svg polygon,rect,circle,ellipse {
+    fill:red;
+}
+
+svg path {
+    fill:none;
+}
