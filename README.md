@@ -8,13 +8,13 @@ By the end of this course, you will be able to use D3.js visualize and build gor
 <H2>What You Will Learn</H2>
 <DIV class=book-info-will-learn-text>
 <UL>
-<LI>Use the C programming language to write numerical code 
-<LI>Get to know Core algorithms used in scientific computing 
-<LI>See how CPU design limits program performance 
-<LI>Control the speed and accuracy of your programs&nbsp; 
-<LI>Know the limitations of inaccuracy and performance and tradeoffs between them 
-<LI>Use modern parallel architectures, distributed systems, and GPGPU accelerators to speed up your programs 
-<LI>Optimize and extend your code to use multiple cores with OpenMP and across multiple networked machines using MPI </LI></UL></DIV>
+<LI>Use D3.js to make interactive, customizable visualizations
+<LI>Manipulate elements on a web page using D3.js
+<LI>The components that D3.js provides to build up a data plot
+<LI>The built-in layouts D3.js provides to make complex plots simple to produce
+<LI>Animate your plots to show changes and transitions
+<LI>The right plot tools for the job and how to build your own tools
+<LI>How D3.js interacts with the components of a web page to build plots </LI></UL></DIV>
 
 ## Instructions and Navigation
 ### Assumed Knowledge
