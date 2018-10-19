@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Stock Dash</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="script.js"></script>
+        <style>
+            .label {
+                font-size: 1em;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: normal;
+                margin-bottom:0;
+            }
+            body {
+                font-size: 0.8em;
+                color:#767a88;
+                background-color: #1c1f29;
+                font-family: 'Montserrat Alternates', sans-serif;
+            }
+            hr {
+                margin: 1px;
+                border-color:#767a88;
+                border-style:ridge;
+            }
+            .plotbox {
+                outline: solid;
+                outline-width:1px;
+                outline-offset:-5px;
+                padding-top:5px;
+                padding-bottom:5px;
+                min-height:192px;
+            }
+            #stock-val {
+                min-height:256px;
+            }
+            svg text {
+                font-size: 7px;
+            }
+            svg path{
+                stroke:#767a88;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+              <div class="row">
+                  <div class="plotbox col-8" id="stock-val">
+                      Stock Value
+                  </div>
+                  <div class="plotbox col-4">
+                      <div class="row">
+                          <div class="label col-4">COMPANY:</div><div class="col-8" id="company-name"></div>
+                      </div>
+                      <div class="row">
+                          <div class="label col-4">CEO:</div><div class="col-8" id="company-ceo"></div>
+                      </div>
+                      <div class="row">
+                          <div class="label col-4">SECTOR:</div><div class="col-8" id="company-sector"></div>
+                      </div>
+                      <div class="row">
+                          <div class="label col-4">EXCHANGE:</div><div class="col-8" id="company-exchange"></div>
+                      </div>
+                      <hr>
+                      <div  id="stock-volume">
+                          <div class="label">STOCK VOLUME</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row" id="peers-values">
+              </div>
+        </div>
+        <script>
+            symbol='intc';
+            get_stats(symbol);
+            get_peers(symbol);
+            get_charts(symbol);
+        </script>
+    </body>
+</html>
